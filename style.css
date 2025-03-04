@@ -4,12 +4,14 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #F5E9E8; /* Fundo neutro para o corpo */
+    color: #402E2D; /* Cor do texto principal */
 }
-
 /* Cabeçalho */
 header {
-    background-color: #BF8887;
-    color: #402E2D;
+    background-color: #BF8887; /* Cor principal */
+    color: #402E2D; /* Cor do texto */
+    font-family: 'Birds of Paradise', sans-serif;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -38,7 +40,7 @@ h1 {
 }
 
 #nav-menu a {
-    color: #402E2D;
+    color: #402E2D; /* Cor do texto */
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
@@ -47,21 +49,23 @@ h1 {
 }
 
 #nav-menu a:hover {
-    background-color: #FFB6B4;
-    color: #402E2D;
+    background-color: #FFB6B4; /* Cor de destaque */
+    color: #402E2D; /* Cor do texto */
 }
 
 /* Conteúdo Principal */
 main {
     padding: 20px;
+    background-color: #F5E9E8; /* Fundo neutro */
 }
 
 section {
-    background-color: #E5A3A2;
+    background-color: #E5A3A2; /* Cor de fundo secundária */
     padding: 20px;
     margin: 10px;
     text-align: center;
     border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 img {
@@ -73,15 +77,15 @@ img {
 
 /* Rodapé */
 footer {
-    background-color: #BF8887;
-    color: #402E2D;
+    background-color: #BF8887; /* Cor principal */
+    color: #402E2D; /* Cor do texto */
     text-align: center;
     padding: 10px;
     margin-top: 20px;
 }
 
 footer a {
-    color: #402E2D;
+    color: #402E2D; /* Cor do texto */
     text-decoration: none;
 }
 
@@ -120,47 +124,32 @@ footer a:hover {
 .formulario-contato {
     max-width: 600px;
     margin: 0 auto;
-    padding:40px;
-    background-color: #f9f9f9;
+    padding: 40px;
+    background-color: #F5E9E8; /* Fundo neutro */
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #402E2D;
 }
 
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #BF8887;
+    border: 1px solid #BF8887; /* Cor principal */
     border-radius: 5px;
     font-size: 1rem;
-    color: #402E2D;
+    color: #402E2D; /* Cor do texto */
     background-color: #ffffff;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .form-group input:focus, .form-group textarea:focus {
-    border-color: #FFB6B4;
+    border-color: #FFB6B4; /* Cor de destaque */
     box-shadow: 0px 0px 5px rgba(255, 182, 180, 0.5);
     outline: none;
 }
 
-.form-group textarea {
-    resize: vertical;
-}
-
 button[type="submit"] {
-    background-color: #BF8887;
-    color: #402E2D;
+    background-color: #BF8887; /* Cor principal */
+    color: #402E2D; /* Cor do texto */
     padding: 20px 30px;
     border: none;
     border-radius: 5px;
@@ -170,33 +159,28 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #FFB6B4;
-}
-
-.lojas {
-    text-align: center;
+    background-color: #FFB6B4; /* Cor de destaque */
 }
 
 .lojas-links {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espaçamento entre as imagens */
-}
-
-.loja-link {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 20px;
 }
 
 .loja-link img {
-    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    width: 100px;
     height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.loja-link img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
 }
 
 .loja-link p {
     margin-top: 10px;
     font-size: 16px;
+    color: #402E2D; /* Cor do texto */
 }
