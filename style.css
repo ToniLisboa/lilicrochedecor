@@ -172,3 +172,31 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #FFB6B4;
 }
+
+.lojas {
+    text-align: center;
+}
+
+.lojas-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as imagens */
+}
+
+.loja-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loja-link img {
+    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+.loja-link p {
+    margin-top: 10px;
+    font-size: 16px;
+}
