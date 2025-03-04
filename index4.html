@@ -3,17 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lili Crochê Decor Fale Conosco</title>
+    <title>Lili Crochê Decor - Fale Conosco</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Fale Conosco</h1>
-    <nav>
-      <a href="index.html">Lar</a>
-      <a href="index1.html">Produtos</a>
-      <a href="index2.html">Dicas</a>
-      <a href="index3.html">Sobre</a>
-      <a href="index4.html">Fale Conosco</a>
-     </nav>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Lili Crochê Decor</h1>
+        <button id="menu-toggle">☰</button>
+        <nav id="nav-menu">
+            <a href="index.html">Lar</a>
+            <a href="index1.html">Produtos</a>
+            <a href="index2.html">Dicas</a>
+            <a href="index3.html">Sobre</a>
+            <a href="index4.html">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="contato">
+            <h2>Fale Conosco</h2>
+            <p>Tem alguma dúvida, sugestão ou quer encomendar um produto personalizado? Entre em contato conosco!</p>
+
+            <!-- Formulário de Contato -->
+            <form class="formulario-contato" action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                        aria-required="true"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                        aria-required="true"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        placeholder="Digite seu telefone (opcional)"
+                        pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}"
+                        title="Formato: (99) 99999-9999"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="5"
+                        placeholder="Digite sua mensagem"
+                        required
+                        aria-required="true"
+                    ></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+
+            <!-- Informações de Contato -->
+            <div class="informacoes-contato">
+                <h3>Outras Formas de Contato</h3>
+                <ul>
+                    <li><strong>E-mail:</strong> contato@lilicrochedecor.com</li>
+                    <li><strong>Telefone:</strong> (11) 1234-5678</li>
+                    <li><strong>Endereço:</strong> Rua das Agulhas, 123 - São Paulo, SP</li>
+                </ul>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="redes-sociais">
+                <h3>Siga-nos nas Redes Sociais</h3>
+                <a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Lili Crochê Decor. Todos os direitos reservados.</p>
+        <p>Siga-nos nas redes sociais: <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 </html>
