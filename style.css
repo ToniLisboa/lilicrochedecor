@@ -1,4 +1,10 @@
+@font-face {
+    font-family: 'Birds of Paradise';
+    src: url('fontes/Birds of Paradise © PERSONAL USE ONLY.ttf') format('truetype');
+}
+
 /* Estilos Gerais */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -60,7 +66,7 @@ main {
 }
 
 section {
-    background-color: #E5A3A2; /* Cor de fundo secundária */
+    background-color: #f8f1f1; /* Cor de fundo secundária */
     padding: 20px;
     margin: 10px;
     text-align: center;
