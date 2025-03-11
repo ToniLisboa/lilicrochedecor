@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lili Crochê Decor - Produtos</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Imagens/lililogoic1.ico" type="image/x-icon">
+   <!-- Adicione ESSES links -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="Imagens/lililogoic1.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -30,22 +33,22 @@
     <main>
         <section class="produtos">
             <h2>Nossos Produtos</h2>
-            <div class="galeria">
-                <div class="produto">
+            <div class="galeria-carrossel"> <!-- Classe alterada -->
+                <div class="produto-item"> <!-- Classe nova -->
                     <img src="Imagensoriginais/kitportacopossouplatspink.webp" alt="Produto 1">
-                    <p>Descrição do Produto 1</p>
+                    <p>Conjunto de Sousplats em Tons Pastéis</p>
                 </div>
-                <div class="produto">
+                <div class="produto-item">
                     <img src="Imagensoriginais/kitsouplatsportacoposaereia.webp" alt="Produto 2">
-                    <p>Descrição do Produto 2</p>
+                    <p>Kit Completo para Cozinha Moderna</p>
                 </div>
-                <div class="produto">
+                <div class="produto-item">
                     <img src="Imagensoriginais/souplatscoracaoaulbb.webp" alt="Produto 3">
-                    <p>Descrição do Produto 3</p>
+                    <p>Sousplats em Formato de Coração</p>
                 </div>
-                <div class="produto">
+                <div class="produto-item">
                     <img src="Imagensoriginais/kitsportacopossouplatssalmao.webp" alt="Produto 4">
-                    <p>Descrição do Produto 4</p>
+                    <p>Kit Sala de Jantar Elegante</p>
                 </div>
             </div>
         </section>
@@ -71,8 +74,12 @@
         <p>&copy; 2023 Lili Crochê Decor. Todos os direitos reservados.</p>
         <p>Siga-nos nas redes sociais: <a href="https://www.instagram.com/lilicrochedecor/?hl=pt-br">Instagram</a> | <a href="#">Facebook</a></p>
     </footer>
+    
 
     <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

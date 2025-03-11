@@ -26,3 +26,96 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 });
+
+// script.js - Adicione esta inicialização
+$(document).ready(function(){
+    $('.galeria-carrossel').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+});
+
+// Inicialização de todos os carrosséis
+$(document).ready(function(){
+    // Carrossel Principal
+    $('.carrossel-principal').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000
+    });
+
+    // Carrossel de Dicas
+    $('.carrossel-dicas').slick({
+        dots: true,
+        arrows: false,
+        slidesToShow: 2,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+    // Carrossel Sobre
+    $('.carrossel-sobre').slick({
+        dots: true,
+        fade: true
+    });
+});
+
+$(document).ready(function(){
+    $('.galeria-carrossel').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3, // 3 produtos por vez
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+});
+
+$('.carrossel').slick({
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                centerMode: true
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                adaptiveHeight: true
+            }
+        }
+    ]
+});

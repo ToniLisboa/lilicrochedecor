@@ -241,3 +241,88 @@ button[type="submit"]:hover {
 .carrossel-btn.next {
     right: 10px;
 }
+
+/* Estilos do Slick Carousel */
+.slick-prev:before, 
+.slick-next:before {
+    color: #BF8887 !important;
+}
+
+.slick-dots li button:before {
+    color: #BF8887 !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #FFB6B4 !important;
+}
+
+/* Ajuste de espaçamento */
+.carrossel-principal,
+.carrossel-dicas,
+.carrossel-sobre {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .slick-slide {
+        padding: 0 10px;
+    }
+}
+
+/* Estilos do Carrossel de Produtos */
+.galeria-carrossel {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.produto-item {
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.produto-item:hover {
+    transform: translateY(-5px);
+}
+
+.produto-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Slick Overrides */
+.slick-prev:before, 
+.slick-next:before {
+    color: #BF8887 !important;
+    font-size: 30px;
+}
+
+.slick-dots li button:before {
+    color: #BF8887 !important;
+    opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #FFB6B4 !important;
+    opacity: 1;
+}
+
+.carrossel img {
+    width: 100%;
+    height: auto;
+    max-width: 1000px; /* Limite máximo para telas grandes */
+    min-width: 300px;  /* Limite mínimo para mobile */
+    aspect-ratio: 3/2; /* Mantém proporção */
+    object-fit: cover; /* Preenchimento inteligente */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
