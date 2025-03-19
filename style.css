@@ -27,7 +27,7 @@ header {
 
 h1 {
     font-family: 'Birds of Paradise', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin: 0;
 }
 
@@ -46,12 +46,13 @@ h1 {
 }
 
 #nav-menu a {
-    color: #402E2D; /* Cor do texto */
+    color: #fffbfb; /* Cor do texto */
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
+    
 }
 
 #nav-menu a:hover {
@@ -325,4 +326,171 @@ button[type="submit"]:hover {
     aspect-ratio: 3/2; /* Mantém proporção */
     object-fit: cover; /* Preenchimento inteligente */
     margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilos da Seção Sobre */
+.sobre {
+    padding: 40px 20px;
+    background-color: #f8f1f1;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carrossel-sobre {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.historia, .missao, .valores {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.historia h3, .missao h3, .valores h3 {
+    color: #BF8887;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.historia p, .missao p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #402E2D;
+}
+
+.valores ul {
+    list-style: none;
+    padding: 0;
+}
+
+.valores li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #402E2D;
+}
+
+.valores strong {
+    color: #BF8887;
+}
+
+/* Estilos do Carrossel de Dicas */
+.carrossel-dicas {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dica {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+}
+
+.dica img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.dica-conteudo {
+    padding: 20px;
+}
+
+.dica-conteudo h3 {
+    color: #BF8887;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.dica-conteudo p {
+    font-size: 1rem;
+    color: #402E2D;
+    line-height: 1.6;
+}
+
+/* Slick Overrides */
+.slick-prev:before,
+.slick-next:before {
+    color: #BF8887 !important;
+    font-size: 30px;
+}
+
+.slick-dots li button:before {
+    color: #BF8887 !important;
+    opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #FFB6B4 !important;
+    opacity: 1;
+}
+
+/* Estilos do Carrossel de Dicas */
+.carrossel-dicas {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dica {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dica img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
+}
+
+.dica-conteudo {
+    padding: 20px;
+    text-align: left;
+}
+
+.dica-conteudo h3 {
+    color: #BF8887;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.dica-conteudo p {
+    font-size: 1rem;
+    color: #402E2D;
+    line-height: 1.6;
+}
+
+/* Slick Overrides */
+.slick-prev:before,
+.slick-next:before {
+    color: #BF8887 !important;
+    font-size: 30px;
+}
+
+.slick-dots li button:before {
+    color: #BF8887 !important;
+    opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #FFB6B4 !important;
+    opacity: 1;
 }

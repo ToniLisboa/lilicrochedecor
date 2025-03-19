@@ -119,3 +119,17 @@ $('.carrossel').slick({
         }
     ]
 });
+
+$(document).ready(function(){
+    $('.carrossel-sobre').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+    });
+});
+
