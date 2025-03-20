@@ -43,6 +43,7 @@ h1 {
 #nav-menu {
     display: flex;
     gap: 15px;
+    
 }
 
 #nav-menu a {
